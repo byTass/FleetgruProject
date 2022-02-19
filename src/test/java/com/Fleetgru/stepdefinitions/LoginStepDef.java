@@ -16,6 +16,7 @@ public class LoginStepDef {
 
     @When("user navigates to Fleetgru login page")
     public void user_navigates_to_Fleetgru_login_page() {
+        BrowserUtils.waitFor(1);
         Driver.get().get(ConfigurationReader.get("url"));
         BrowserUtils.waitFor(1);
     }
@@ -34,7 +35,7 @@ public class LoginStepDef {
 
     @Then("user lands on {string} page successfully")
     public void user_lands_on_page_successfully(String ExpectedSubtitle) {
-        BrowserUtils.waitFor(1);
+        BrowserUtils.waitFor(4);
         String ActualSubtitle = new DashboardPage().subtitle.getText();
         Assert.assertEquals("Verify subtitles are equal", ExpectedSubtitle, ActualSubtitle);
     }

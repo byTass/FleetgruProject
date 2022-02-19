@@ -1,4 +1,4 @@
-@wip
+
 Feature: As a user i should be able to login
 
   Background:
