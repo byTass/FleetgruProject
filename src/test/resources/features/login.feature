@@ -1,3 +1,4 @@
+@wip
 Feature: As a user i should be able to login
 
   Background:
@@ -96,7 +97,7 @@ Feature: As a user i should be able to login
       |user1           |UserUser123 |
       |salesmanager101 |UserUser123 |
       |storemanager51  |UserUser123 |
-  @wip
+
   Scenario Outline: Keyboard Enter Key Function on Login Page
     When user enters "<username>" and "<password>" clicks Enter via keyboard
     Then user lands on "<subtitle>" page successfully
