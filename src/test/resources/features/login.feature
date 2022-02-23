@@ -25,7 +25,7 @@ Feature: As a user i should be able to login
     Scenario Outline: Invalid username and valid password
       When user enters "<username>" and "<password>"
       And clicks login button
-      Then "Invalid user name or password." message should be displayed
+      Then "Invalid username or password." message should be displayed
 
       Examples:
         |username        |password    |
@@ -43,7 +43,7 @@ Feature: As a user i should be able to login
   Scenario Outline: Valid username and invalid password
     When user enters "<username>" and "<password>"
     And clicks login button
-    Then "Invalid user name or password." message should be displayed
+    Then "Invalid username or password." message should be displayed
 
     Examples:
       |username         |password      |

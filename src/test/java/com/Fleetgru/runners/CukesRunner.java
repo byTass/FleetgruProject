@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/Fleetgru/stepdefinitions",
         dryRun = false,
-        tags = "@wip"
+        tags = "@FLEETG-740"
 )
 public class CukesRunner {
 }
